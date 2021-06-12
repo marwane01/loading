@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:src="@color/black"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        />
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rick Sanchez"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/image"
+        android:layout_marginLeft="15sp"
+
+        />
+    <TextView
+        android:id="@+id/txtspecies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Human"
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@id/txtname"
+        android:layout_marginLeft="15sp"
+        />
+    <TextView
+        android:id="@+id/txtstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alive"
+        android:layout_toRightOf="@id/txtspecies"
+        android:layout_below="@id/txtname"
+        android:layout_marginLeft="15sp"
+        />
+    <TextView
+        android:id="@+id/txtgender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:layout_toRightOf="@id/txtstatus"
+        android:layout_below="@id/txtname"
+        android:layout_marginLeft="15sp"
+        />
+
+
+
+
+</RelativeLayout>

@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     public Handler mHandler;
     public View ftView;
     public boolean isLoading = false;
-    int num=32;
+    int num=1;
 
 
 

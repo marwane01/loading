@@ -8,14 +8,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.loading.model.ProfileModel;
 import com.squareup.picasso.Picasso;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ProfileAdapter extends ArrayAdapter<ProfileModel> {
@@ -30,6 +28,12 @@ public class ProfileAdapter extends ArrayAdapter<ProfileModel> {
         this.context = context;
         this.resource = resource;
         this.profileList = profileList;
+    }
+    public void addlistItemToAdapter(List<ProfileModel> list){
+        //Add list to current array list of data
+        profileList.addAll(list);
+        //Notify UI
+        this.notifyDataSetChanged();
     }
 
     @NonNull
